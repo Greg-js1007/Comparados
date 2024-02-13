@@ -141,3 +141,34 @@ body{
     background-color: var(--green-principal);
     color: var(--warm-grey);
 }
+/* Productos Buscados */
+main{
+    font-size: 1rem;
+}
+.info_comparados{
+    padding: 20px 0;
+    text-align: center;
+}
+.info_subtitulo{
+    font-size: 1.75rem;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.productos_buscados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.carts{
+    width: 200px;
+    height: auto;
+    padding: 30px 0;
+}
+.image_product{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.cart_info{
+    text-align: center;
+}
