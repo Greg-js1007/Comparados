@@ -39,13 +39,14 @@
             <!-- Buscador  -->
             <section class="buscador_container">
                 <h1 class="buscador_titulo">Escribe el producto que deseas comparar</h1>
-                <form id="buscador" class="buscador_form" action="">
+                <form id="buscador_form" class="buscador_form" action="">
                     <div class="buscador">
                         <img src="../img/icons/busqueda-de-lupa.png" alt="lupa">
-                        <input class="buscador_input" type="text" placeholder="Busca un producto">
+                        <input id="buscar_input" class="buscador_input" type="text" placeholder="Busca un producto">
                     </div>
-                    <input class="buscador_input submit" type="submit" value="Comparar">
+                    <button id="buscador_submit" class="buscador_input submit">Comparar</button>
                 </form>
+                <div id="results"></div>
             </section>
             <!-- Fin Buscador -->
         </header>
@@ -60,9 +61,9 @@
                         <img class="image_product" src="../img/productos/farmatodo/harinaPan.png" alt="">
                     </figure>
                     <div class="cart_info">
-                        <p>Harina Pan de Maiz 1kg</p>
-                        <p>$1.09</p>
-                        <p>
+                        <p id="cart_nameProduct">Harina Pan de Maiz 1kg</p>
+                        <p id="cart_priceProduct">$1.09</p>
+                        <p id="cart_nameProveedor">
                             Farmatodo
                             <i></i>
                         </p>
@@ -74,9 +75,9 @@
                         <img class="image_product" src="../img/productos/Elplazas/harinaPan.jpg" alt="">
                     </figure>
                     <div class="cart_info">
-                        <p>Harina Pan de Maiz 1kg</p>
-                        <p>$1.11</p>
-                        <p>
+                        <p id="cart_nameProduct">Harina Pan de Maiz 1kg</p>
+                        <p id="cart_priceProduct">$1.11</p>
+                        <p id="cart_nameProveedor">
                             ElPlazas <i></i>
                         </p>
                     </div>
