@@ -1,4 +1,4 @@
-**{
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -17,5 +17,69 @@
 
 body{
     font-family: 'Fredoka', sans-serif;
-    
+    font-size: 62.5%;
+}
+.container-box{
+    padding: 20px 25px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_container{
+    width: 75px;
+    height: auto;
+}
+.logo{
+    width: 100%;
+}
+.menu{
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_list{
+    display: flex;
+    padding-right: 20px;
+}
+.menu_item{
+    list-style: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+.menu_item:nth-child(1){
+    border-right: 1px solid var(--green-principal);
+}
+.menu_item:nth-child(2){
+    border-right: 1px solid var(--green-principal);
+}
+.menu_anchor{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--green-principal);
+}
+.menu_anchor-hover:hover{
+    text-decoration: underline;
+}
+.menu_item-cart{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green-principal);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.menu_item-cart img{
+    width: 20%;
+    height: 25px;
+}
+.menu_anchor-cart{
+    color: var(--warm-grey);
+    text-decoration: none;
+    font-size: 1rem;
 }
