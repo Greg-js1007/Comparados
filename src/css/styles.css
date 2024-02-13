@@ -86,3 +86,58 @@ body{
     text-decoration: none;
     font-size: 1rem;
 }
+/* Buscador */
+
+.buscador_container{
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.buscador{
+    width: 380px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.buscador img{
+    width: 7%;
+    padding-left: 10px;
+}
+.buscador_titulo{
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.buscador_form{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buscador_input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: .875rem;
+    outline: none;
+}
+.submit{
+    border: 1px solid black;
+    height: 45px;
+    width: 120px;
+    border-radius: 30px;
+    font-size: .875rem;
+    cursor: pointer;
+    background-color: var(--green-principal);
+    color: var(--warm-grey);
+}
