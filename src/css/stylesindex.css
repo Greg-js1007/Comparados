@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&display=swap');
+
+:root{
+    --green-principal:#1F5014;
+    --warm-grey:#ebf2fa;
+    --cobalt-blue:#05668d;
+    --cerulean-blue:#427aa1;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Fredoka', sans-serif;
+}
+/* Utilidades */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/*HEADER*/
+
+.container-hero{
+    background-color: #ebf2fa;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support{
+   display: flex; 
+   align-items: center;
+   gap: 2rem;
+}
+
+.customer-support i{ 
+    font-size: 3.3rem;
+}
+
+.content-customer-support{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+/*.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container-logo i{
+    font-size: 3rem;
+}
+.container-logo{
+    width: 50px;
+    height: auto;
+    align-items: center;
+    gap: .5rem;
+}
+.logo{
+    width: 100%;
+    font-size: 3rem;
+}
+*/
+.container-logo h1 a{
+    text-decoration: none;
+    color: #1F5014;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.container-user{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user{
+    font-size: 3rem;
+    color: #1F5014;
+    padding-right: 2.5rem;
+    border-right: 1px solid #1F5014;
+}
+
+.container-user .fa-basket-shopping{
+    font-size: 3rem;
+    color: #1F5014;
+    padding-left: 1rem;
+}
+
+.content-shopping-cart{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.container-navbar{
+    background-color: #1F5014;
+}
+.container-logo{
+    width: 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.logo{
+    width: 100%;
+    font-size: 3rem;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    width: 1.5rem;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a:hover::after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: #000000;
+}
+
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.search-form input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: #777 ;
+    cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.search-form .btn-search{
+    border: none;
+    background-color: #1F5014;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn-search i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+body{
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 62.5%; 
+}
+
+h4, h2, small, a{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/*CARRUSEL1*/
+
+.carousel{
+    width: 100%;
+    margin: 0px 0px;
+}
+
+@media (min-width:768px) {
+
+    .carousel{
+        margin: 0px 10px;
+    }
+}
+/*
+.carousel h2{
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}*/
+
+.carrusel-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    max-width: 90vw;
+    overflow: visible;
+}
+
+.carrusel-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    margin-right: 10px
+}
+
+.carrusel h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #000000;
+    padding: 15px;
+}
+
+.carrusel h4 small{
+    font-size: 15px;
+    display: block;
+}
+
+.carrusel a img{
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+@media (min-width:768px) {
+    .carrusel {
+        width: 250px;
+        margin-right: 5px;
+    }
+    .carrusel a img {
+        width: 180px;
+
+    }
+}
+
+.carrusel-arrow{
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus{
+    outline: 0;
+}
+
+.carrusel-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.carrusel-prev{
+    left: 0px;
+}
+
+.carrusel-next{
+    right: 0px;
+}
+
+/* Buscador */
+
+.buscador_container{
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.buscador{
+    width: 500px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.buscador .fa-magnifying-glass{
+    width: 7%;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+/*.btn-search i{
+    font-size: 2rem;
+    color: #ffffff;
+}*/
+.buscador_titulo{
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.buscador_form{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buscador_input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    outline: none;
+}
+.submit{
+    border: 1px solid black;
+    height: 45px;
+    width: 120px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: var(--green-principal);
+    color: var(--warm-grey);
+}
+
+.section-divider{
+    border-top: 2px solid #777;
+    margin: 20px 0;
+}
+
+/*CARRUSEL 2*/
+
+
+.ofertas{
+    width: 100%;
+    margin: 0px 0px;
+}
+
+@media (min-width:768px) {
+
+    .carousel-ofertas{
+        margin: 0px 0px;
+    }
+}
+
+.ofertas-title{
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.carrusel-list2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    max-width: 600px;
+    overflow: hidden;
+    transition: transform .5s ease-in-out;
+}
+
+.carrusel-track2{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrusel2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: auto;
+    margin-right: 10px;
+    max-width: 200px;
+}
+
+.carrusel2 a img{
+    display: flex ;
+    object-fit: cover;
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.carrusel2 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; 
+    font-size: 1.8rem;
+    line-height: 23px;
+    color: #000000;
+    padding: 15px;
+    margin: 0; 
+    background: rgba(255, 255, 255, 0.7); 
+}
+/*
+.carrusel2 p{
+    position:relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    line-height: 23px;
+    color: #000000;
+    padding: 15px;
+}*/
+
+@media (min-width:768px) {
+    .carrusel2 {
+        width: 250px;
+        margin-right: 5px;
+    }
+    .carrusel a img {
+        width: 180px;
+
+    }
+}
+
+.carrusel-arrow{
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.carrusel-arrow:focus{
+    outline: 0;
+}
+
+.carrusel-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.carrusel2 picture {
+    position: relative;
+}
+
+.ofertas-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.ofertas-discount {
+    margin: 0;
+    padding: 10px;
+}
+
+.carrusel2 a.ofertas-button {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #1F5014;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.carrusel2 a.ofertas-button:hover {
+    background-color: #1F5014;
+}
+.carousel-ofertas {
+    width: 100%; 
+    overflow: hidden;
+}
+
+.carrusel-prev{
+    left: 0px;
+}
+
+.carrusel-next{
+    right: 0px;
+}
+
+.section-divider2{
+    border-top: 2px solid #777;
+    margin: 20px 0;
+}
+
+/*Cadena de Supermercados*/
+
+.supermercados {
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.market-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.market-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.market-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.market-name {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.market-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.star {
+    color: #fdd835;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
