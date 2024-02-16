@@ -48,7 +48,7 @@ function comparar(){
         console.log(ahorro);
         ahorroPor = (ahorro / priceHarina2) * 100;
         ahorroPor = Math.round(ahorroPor);
-        alert(ahorroPor+"%");
+        alert("Ahorraste "+ahorroPor+"%");
     }
     else if (priceHarina1 > priceHarina2){
         mensajeResultado.innerHTML = "La " + nameProduct2 + " es más barata en " + nameMarket2;
@@ -57,7 +57,7 @@ function comparar(){
         ahorro = priceHarina1 - priceHarina2;
         ahorroPor = (ahorro / priceHarina1) * 100;
         ahorroPor = Math.round(ahorroPor);
-        alert(ahorroPor+"%");
+        alert("Ahorraste "+ahorroPor+"%");
     }
     else{
         alert("No se pudo comparar los productos, vuelva a intentarlo");
