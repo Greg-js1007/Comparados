@@ -25,6 +25,8 @@ let priceHarina1 = 1.09;
 //El plazas
 let priceHarina2 = 1.11;
 
+let ahorro = 0;
+let ahorroPor =0;
 //Hace que el cuando le des click al boton no se recargue la pagina 
 buttonComparar.addEventListener("click", (e) => {
     e.preventDefault();
@@ -42,11 +44,20 @@ function comparar(){
         mensajeResultado.innerHTML = "La " + nameProduct1 + " es más barata en " + nameMarket1;
         imageFigure.style.backgroundColor = "#05668d";
         mensajeResultado.style.fontWeight = "700"
+        ahorro = priceHarina2 - priceHarina1;
+        console.log(ahorro);
+        ahorroPor = (ahorro / priceHarina2) * 100;
+        ahorroPor = Math.round(ahorroPor);
+        alert(ahorroPor+"%");
     }
     else if (priceHarina1 > priceHarina2){
         mensajeResultado.innerHTML = "La " + nameProduct2 + " es más barata en " + nameMarket2;
         imageFigure.style.backgroundColor = "#05668d"; 
         mensajeResultado.style.fontWeight = "700"
+        ahorro = priceHarina1 - priceHarina2;
+        ahorroPor = (ahorro / priceHarina1) * 100;
+        ahorroPor = Math.round(ahorroPor);
+        alert(ahorroPor+"%");
     }
     else{
         alert("No se pudo comparar los productos, vuelva a intentarlo");
