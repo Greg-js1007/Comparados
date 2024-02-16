@@ -307,7 +307,7 @@ a{
     transition: .3s ease-in-out;
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .carrusel {
         width: 250px;
         margin-right: 5px;
@@ -316,7 +316,7 @@ a{
         width: 180px;
 
     }
-}
+} */
 
 .carrusel-arrow{
     border-radius: 30px;
@@ -423,12 +423,12 @@ a{
     margin: 0px 0px;
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
 
     .carousel-ofertas{
         margin: 0px 0px;
     }
-}
+} */
 
 .ofertas-title{
     font-size: 45px;
@@ -451,7 +451,7 @@ a{
     margin: 0 auto;
     max-width: 600px;
     overflow: hidden;
-    transition: transform .5s ease-in-out;
+    transition:  .3s ease-in-out;
 }
 
 .carrusel-track2{
@@ -460,7 +460,7 @@ a{
     left: 0;
     display: flex;
     justify-content: center;
-    transition: transform 0.3s ease-in-out;
+    transition:  0.3s ease-in-out;
 }
 
 .carrusel2{
@@ -512,7 +512,7 @@ a{
     padding: 15px;
 }*/
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .carrusel2 {
         width: 250px;
         margin-right: 5px;
@@ -521,7 +521,7 @@ a{
         width: 180px;
 
     }
-}
+} */
 
 .carrusel-arrow{
     border-radius: 30px;
@@ -710,6 +710,6 @@ button {
     border: transparent; 
     padding: 5px 0px; 
     color: #333; 
-    
+    font-size: 1rem;
 }
 

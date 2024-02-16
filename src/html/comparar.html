@@ -12,7 +12,7 @@
         <header class="header container-box">
             <section class="navbar-container">
                 <figure class="logo_container">
-                    <a href="#">
+                    <a href="../html/index.html">
                         <img class="logo" src="../img/CLogo.png" alt="Logo comparados">
                     </a>
                 </figure>
@@ -57,7 +57,7 @@
             </div>
             <section id="productos_buscados" class="productos_buscados">
                 <div id="cart_uno" class="cart_uno carts">
-                    <figure>
+                    <figure id="cart_figure" class="cart_figure">
                         <img class="image_product" src="../img/productos/farmatodo/harinaPan.png" alt="">
                     </figure>
                     <div class="cart_info">
@@ -71,21 +71,30 @@
                     <button></button>
                 </div>
                 <div id="cart_dos" class="cart_dos carts">
-                    <figure class="cart_figure">
+                    <figure id="cart_figure2" class="cart_figure">
                         <img class="image_product" src="../img/productos/Elplazas/harinaPan.jpg" alt="">
                     </figure>
-                    <div class="cart_info">
-                        <p id="cart_nameProduct">Harina Pan de Maiz 1kg</p>
-                        <p id="cart_priceProduct">$1.11</p>
-                        <p id="cart_nameProveedor">
-                            ElPlazas <i></i>
+                    <div id="cart_info" class="cart_info">
+                        <p id="cart_nameProduct2">Harina Pan de Maiz 1kg</p>
+                        <p id="cart_priceProduct2">$1.11</p>
+                        <p id="cart_nameProveedor2">
+                            El Plazas <i></i>
                         </p>
                     </div>
-                    <button></button>
+                    <section class="">
+                        <div class="container_buttonComparar">
+                            <button id="button_comparar">Comparar</button>
+                        </div>
+                        <div id="container_comparar">
+                            <p id="mensaje_comparar"></p>
+                        </div>
+                    </section>
+                    <div class="reiniciar_container">
+                        <button id="reiniciar_comparados">Reiniciar</button>
+                    </div>
                 </div>
             </section>
         </main>
-        <script src="../js/db.js"></script>
         <script src="../js/app.js"></script>
     </body>
 </html>
