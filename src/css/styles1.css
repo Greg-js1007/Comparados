@@ -235,12 +235,7 @@ a{
     margin: 0px 0px;
 }
 
-@media (min-width:768px) {
 
-    .carousel{
-        margin: 0px 10px;
-    }
-}
 /*
 .carousel h2{
     font-size: 45px;
@@ -261,8 +256,8 @@ a{
     height: 304px;
     padding: 10px 0px;
     margin: 0 auto;
-    max-width: 90vw;
-    overflow: visible;
+    width: 100%;
+    overflow: hidden;
 }
 
 .carrusel-track{
@@ -664,5 +659,57 @@ a{
     color: #fdd835;
     margin-right: 2px;
     font-size: 20px;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.footer-left img{
+    max-width: 100%;
+    height: auto;
+}
+.logo-footer{
+    width: 150px;
+    height: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 25%;
+}
+
+.container-logo-footer{
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.container-logo-footer p{
+    font-size: 1.3rem;
+    color: #000000;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.footer-center h3, .footer-right h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+button {
+    display: block;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: transparent; 
+    padding: 5px 0px; 
+    color: #333; 
+    
 }
 

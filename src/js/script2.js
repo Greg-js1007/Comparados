@@ -14,7 +14,7 @@ App.prototype.processingButton2 = function(event){
 
 
 let prevAction2 = (leftPosition2, carruselWidth2, track2) =>  {
-     if (leftPosition2 > 0){
+    if (leftPosition2 > 0){
         track2.style.left = `${-1 * (leftPosition2 - carruselWidth2)}px`;
     }
 }
@@ -24,5 +24,5 @@ let nextAction2 = (leftPosition2, trackWidth2, listWidth2, carruselWidth2, track
         track2.style.left = `${-1 * (leftPosition2 + carruselWidth2)}px`;
     }
 }
-  
+
 
