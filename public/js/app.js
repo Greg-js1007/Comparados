@@ -3,11 +3,15 @@ let priceProductHarina2 = document.getElementById("car_priceProduct2");
 let buttonComparar = document.getElementById("button_comparar");
 let mensajeResultado = document.getElementById("mensaje_comparar");
 
-let nameProduct1 = document.getElementById("cart_nameProduct").textContent;
-let nameProduct2 = document.getElementById("cart_nameProduct2").textContent;
+let nameProduct1 = document.getElementById("cart_nameProduct").value;
+let nameProduct2 = document.getElementById("cart_nameProduct2").value;
+console.log(nameProduct1)
+console.log(nameMarket2)
 
-let nameMarket1 = document.getElementById("cart_nameProveedor").textContent;
-let nameMarket2 = document.getElementById("cart_nameProveedor2").textContent;
+let nameMarket1 = document.getElementById("cart_nameProveedor").value;
+let nameMarket2 = document.getElementById("cart_nameProveedor2").value;
+console.log(nameMarket2)
+console.log(nameMarket2)
 
 let imageFigure = document.getElementById("image_product1");
 let imageFigure2 = document.getElementById("image_product2");
