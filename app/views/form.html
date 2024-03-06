@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPARADOS Login</title>
-    <link rel="shortcut icon" href="/public/img/CLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/public/css/normalize.css">
-    <link rel="stylesheet" href="/public/css/formstyle.css">
+    <link rel="shortcut icon" href="../img/CLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/formstyle.css">
 </head>
 <body>
     <div class="formulario">
         <h1>Iniciar Sesión</h1>
-        <form method="post">
+        <form method="post" action="../php/inicio_sesion.php">
             <div class="username">
+                <input type="text" name="email" required>
                 <label>Nombre de usuario</label>
-                <input type="text" required>
             </div>
             <div class="contraseña">
+                <input type="password" name="password" required>
                 <label>Contraseña</label>
-                <input type="password" required>
             </div>
             <div class="recordar">¿Olvidó su Contraseña?</div>
             <input type="submit" value="Iniciar">
             <div class="registrarse">
-                Quiero hacer el <a href="#">registro</a>
+                Quiero hacer el <a href="../php/formRegistro.php">registro</a>
             </div>
         </form>
     </div>
